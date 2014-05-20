@@ -1,5 +1,6 @@
 
-<h1>Libertycoin </h1><br>
+<h1>Libertycoin </h1>
+<a href="http://libertycoin.co"><h3>www.libertycoin.co</h3></a>
 <p>Libertycoin is peer-to-peer electronic cash system that uses Blockchain technology based on Bitcoin to create consensus among the the network. The Libertycoin protocol has an internal currency called XLB that incentivates miners to confirm transactions and help secure the network. Libertycoin uses a blockchain security system called proof-of-stake to preven double spending and solve the Byzantines Generals problem. All the coins were fairly distributed using an asic resistant proof-of-work system with the X11 algorithm.
 
 <h2><strong>Technical Specifications</strong></h2>
@@ -12,7 +13,6 @@ Min stake age: 8 hours, no max age<br>
 P2P port: 55901, RPC port: 55900<br>
 
 <h2>Libertycoin.conf</h2>
-<code>
 rpcuser=user<br>
 rpcpassword=pass<br>
 rpcallowip=127.0.0.1<br>
@@ -32,7 +32,7 @@ addnode=37.187.74.123<br>
 addnode=192.99.3.15<br>
 addnode=174.51.17.18<br>
 addnode=93.103.43.62<br>
-</code>
+
 
 <h2><strong>Blockchain Explorers</strong></h2>
 http://xlb.blockexplorer.cc/chain/LibertyCoin<br>
