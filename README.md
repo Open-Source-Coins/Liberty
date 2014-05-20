@@ -1,2 +1,2 @@
 
-[h1]Libertycoin [/h1]
+<h1>Libertycoin </h1>
