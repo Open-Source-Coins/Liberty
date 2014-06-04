@@ -256,6 +256,8 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
+    webSiteAction = new QAction(tr("www.libertycoin.co"), this);
+    webSiteAction->setToolTip(tr("Go to the main website"));
     aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Libertycoin"), this);
     aboutAction->setToolTip(tr("Show information about Libertycoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
@@ -286,6 +288,7 @@ void BitcoinGUI::createActions()
     openRPCConsoleAction->setToolTip(tr("Open debugging and diagnostic console"));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
+    connect(webSiteAction, SIGNAL(triggered()), this, SLOT(webSiteClicked()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
     connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(optionsAction, SIGNAL(triggered()), this, SLOT(optionsClicked()));
@@ -329,6 +332,9 @@ void BitcoinGUI::createMenuBar()
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
     help->addSeparator();
+   #ifdef WIN32
+     help->addAction(webSiteAction);
+   #endif
     help->addAction(aboutAction);
     help->addAction(aboutQtAction);
 }
@@ -475,6 +481,10 @@ void BitcoinGUI::optionsClicked()
     dlg.setModel(clientModel->getOptionsModel());
     dlg.exec();
 }
+void BitcoinGUI::webSiteClicked()
+ {
+     QDesktopServices::openUrl(QUrl("http://www.libertycoin.co/"));
+ }
 
 void BitcoinGUI::aboutClicked()
 {

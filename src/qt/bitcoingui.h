@@ -81,6 +81,7 @@ private:
     QAction *addressBookAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
+    QAction *webSiteAction;
     QAction *aboutAction;
     QAction *receiveCoinsAction;
     QAction *optionsAction;
@@ -153,6 +154,7 @@ private slots:
 
     /** Show configuration dialog */
     void optionsClicked();
+    void webSiteClicked();
     /** Show about dialog */
     void aboutClicked();
 #ifndef Q_OS_MAC
