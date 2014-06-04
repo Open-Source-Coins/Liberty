@@ -32,6 +32,7 @@ addnode=37.187.74.123<br>
 addnode=192.99.3.15<br>
 addnode=174.51.17.18<br>
 addnode=93.103.43.62<br>
+addnode=192.241.247.229
 
 
 <h2><strong>Blockchain Explorers</strong></h2>
