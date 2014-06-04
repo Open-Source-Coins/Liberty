@@ -196,7 +196,7 @@ public:
 
     // flood relay
     std::vector<CAddress> vAddrToSend;
-    mruset<CAddress> setAddrKnown;
+    std::set<CAddress> setAddrKnown;
     bool fGetAddr;
     std::set<uint256> setKnown;
     uint256 hashCheckpointKnown; // ppcoin: known sent sync-checkpoint
@@ -207,7 +207,7 @@ public:
     CCriticalSection cs_inventory;
     std::multimap<int64_t, CInv> mapAskFor;
 
-    CNode(SOCKET hSocketIn, CAddress addrIn, std::string addrNameIn = "", bool fInboundIn=false) : ssSend(SER_NETWORK, INIT_PROTO_VERSION), setAddrKnown(5000)
+    CNode(SOCKET hSocketIn, CAddress addrIn, std::string addrNameIn = "", bool fInboundIn=false) : vSend(SER_NETWORK, MIN_PROTO_VERSION), vRecv(SER_NETWORK, MIN_PROTO_VERSION)
     {
         nServices = 0;
         hSocket = hSocketIn;
@@ -387,7 +387,7 @@ public:
         LEAVE_CRITICAL_SECTION(cs_vSend);
     }
 
-
+    
 
 
 
