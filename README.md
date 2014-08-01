@@ -5,7 +5,7 @@
 
 <h2><strong>Technical Specifications</strong></h2>
 Algorithm: X11 | 100% proof-of-stake<br>
-Total coins: 16.5 Million<br>
+Total coins (POW): 16.5 Million<br>
 Block time: 1 minute<br>
 Difficulty retarget: every block<br>
 Nominal stake interest: 1% annually<br>
