@@ -40,5 +40,5 @@ http://xlb.blockexplorer.cc/chain/LibertyCoin<br>
 http://libertycoin.co/crawler/<br>
 
 <h2><strong>Forums</strong></h2>
-https://libertycointalk.org
+http://libertycointalk.org
 
