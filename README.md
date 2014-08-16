@@ -1,4 +1,5 @@
 
+<h1>Coins Source Trust Index</h1>
 <h1>Libertycoin </h1>
 <a href="http://libertycoin.co"><h3>www.libertycoin.co</h3></a>
 <p>Libertycoin is peer-to-peer electronic cash system that uses Blockchain technology based on Bitcoin to create consensus among the the network. The Libertycoin protocol has an internal currency called XLB that incentivates miners to confirm transactions and help secure the network. Libertycoin uses a blockchain security system called proof-of-stake to prevent double spending and solve the Byzantines Generals problem. All the coins were fairly distributed using an asic resistant proof-of-work system with the X11 algorithm.
